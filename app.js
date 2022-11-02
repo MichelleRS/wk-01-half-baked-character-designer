@@ -42,7 +42,7 @@ middleDropdown.addEventListener("change", (e) => {
 bottomDropdown.addEventListener("change", (e) => {
   const value = e.target.value;
   bottomCounter++;
-  bottomEl.style.backgroundImage = `url("./assets/${value}-bottom.png)`;
+  bottomEl.style.backgroundImage = `url("./assets/${value}-pants.png")`;
   displayStats();
 });
 
