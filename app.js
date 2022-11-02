@@ -34,19 +34,16 @@ headDropdown.addEventListener("change", (e) => {
 
 middleDropdown.addEventListener("change", (e) => {
   const value = e.target.value;
-
   middleCounter++;
-
   middleEl.style.backgroundImage = `url("./assets/${value}-middle.png")`;
-
   displayStats();
 });
 
-bottomDropdown.addEventListener("change", () => {
-  // get the value of the bottom dropdown
-  // increment the bottom change count state
-  // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-  // update the stats to show the new count (call displayStats() to do this work)
+bottomDropdown.addEventListener("change", (e) => {
+  const value = e.target.value;
+  bottomCounter++;
+  bottomEl.style.backgroundImage = `url("./assets/${value}-bottom.png)`;
+  displayStats();
 });
 
 catchphraseButton.addEventListener("click", () => {
